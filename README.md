@@ -1,24 +1,101 @@
-# Xircuits Component Library Template
+<p align="center">
+  <a href="https://github.com/XpressAI/xircuits/tree/master/xai_components#xircuits-component-library-list">Component Libraries</a> •
+  <a href="https://github.com/XpressAI/xircuits/tree/master/project-templates#xircuits-project-templates-list">Project Templates</a>
+  <br>
+  <a href="https://xircuits.io/">Docs</a> •
+  <a href="https://xircuits.io/docs/Installation">Install</a> •
+  <a href="https://xircuits.io/docs/category/tutorials">Tutorials</a> •
+  <a href="https://xircuits.io/docs/category/developer-guide">Developer Guides</a> •
+  <a href="https://github.com/XpressAI/xircuits/blob/master/CONTRIBUTING.md">Contribute</a> •
+  <a href="https://www.xpress.ai/blog/">Blog</a> •
+  <a href="https://discord.com/invite/vgEg2ZtxCw">Discord</a>
+</p>
 
-This section should have a short description on what is does.
+<p align="center"><i>Xircuits Component Library for Playwright — Enhance your browser automation workflows.</i></p>
+
+---
+
+## Xircuits Component Library for Playwright
+
+This library provides a suite of components that integrate Playwright with Xircuits, enabling robust browser automation. Use these components to build workflows for testing, web scraping, and interactive automation.
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Main Xircuits Components](#main-xircuits-components)
+- [Installation](#installation)
+
 
 ## Prerequisites
 
-A project may have prerequisites such as models that needs to be downloaded or non-python related setup. You may list them down here.
+Before you begin, ensure you have the following:
+
+1. Python 3.9+
+2. Xircuits
+
+## Main Xircuits Components
+
+### PlaywrightOpenBrowser Component:
+  Opens a Playwright browser, navigates to a specified URL, and initializes the worker thread.
+
+<img src="https://github.com/user-attachments/assets/9198de0e-173e-4e59-b5f2-934b257f9914" alt="PlaywrightOpenBrowser" width="225" height="150" />
+
+
+### PlaywrightIdentifyElement Component:  
+  Locates elements on the page using CSS selectors, roles, or labels.
+
+<img src="https://github.com/user-attachments/assets/c091356c-8c8f-4b88-bf8e-d2bf22cdd9dc" alt="PlaywrightIdentifyElement" width="225" height="175" />
+
+
+### PlaywrightClickElement Component:
+  Performs click or double-click actions on elements or specific coordinates.
+
+### PlaywrightFillInput Component:
+  Fills input fields with text, supporting both immediate and sequential typing.
+
+### PlaywrightPressKey Component:
+  Simulates key presses on a designated element or globally on the page.
+
+### PlaywrightHoverElement Component:
+  Hovers over elements to trigger visual effects or tooltips.
+
+### PlaywrightCheckElement Component:
+  Checks a checkbox or radio button and verifies its state.
+
+### PlaywrightSelectOptions Component:
+  Selects one or more options from `<select>` elements.
+
+### PlaywrightUploadFiles Component:
+  Uploads files to file input elements.
+
+### PlaywrightFocusElement Component:
+  Focuses on a specified element to prepare for further actions.
+
+### PlaywrightScrolling Component:
+  Scrolls elements or the entire page using various methods (evaluate, mouse wheel, etc.).
+
+### PlaywrightDragAndDrop Component:
+  Enables drag and drop actions between elements.
+
+### PlaywrightTakeScreenshot Component:
+  Captures screenshots of elements or the entire page.
+
+### PlaywrightCloseBrowser Component: 
+  Closes the browser instance gracefully.
+
 
 ## Installation
 
-To use this component library, ensure you have Xircuits installed, then simply run:
+To install the Playwright component library, make sure you have a working Xircuits installation. You can install it using the component library interface or via the CLI:
 
-```
-xircuits install https://github.com/your-organization/your-repository
-```
-
-Alternatively you may manually copy the directory / clone or submodule the repository to your working Xircuits project directory then install the packages using:
-
-```
-pip install -r requirements.txt
+```bash
+xircuits install playwright
 ```
 
-## Tests
-A github action to test your workflow runs has been provided. Simply add the path of your workflows [here](.github/workflows/run-workflow-tests.yml#L11).
+Alternatively, install it manually by cloning the repository and installing the requirements:
+
+```bash
+# Base Xircuits directory
+git clone https://github.com/XpressAI/xai-playwright xai_components/xai_playwright
+pip install -r xai_components/xai_playwright/requirements.txt
+```
