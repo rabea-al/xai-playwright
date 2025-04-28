@@ -80,8 +80,34 @@ Before you begin, ensure you have the following:
 ### PlaywrightTakeScreenshot Component:
   Captures screenshots of elements or the entire page.
 
+### PlaywrightWaitForTime Component:
+  Pauses execution for a specified number of seconds.
+
+### PlaywrightWaitForSelector Component:
+  Waits until a specific selector appears on the page.
+
+### PlaywrightNavigateToURL Component:
+  Navigates an existing Playwright page instance to a new URL.
+
 ### PlaywrightCloseBrowser Component: 
   Closes the browser instance gracefully.
+
+## Automation Components
+
+### PlaywrightWaitForSplashAndClickXircuitsFile Component:
+  Waits for the JupyterLab splash screen to disappear, then clicks the "Xircuits File" button to open the Xircuits workspace.
+
+### PlaywrightDragComponentToPosition Component:
+  Drags a specified component from the sidebar and drops it at a specified (x, y) position on the Xircuits canvas.
+
+### PlaywrightAlignNode Component:
+  Moves a node (e.g., "Start" or "Finish") to align it left or right relative to another node, with a configurable offset.
+
+### PlaywrightConnectNodes Component:
+  Connects two nodes together on the Xircuits canvas by dragging from a source node's port to a target node's port.
+
+### PlaywrightCompileAndRunXircuits Component:
+  Saves, compiles, and runs the current Xircuits workflow automatically.
 
 
 ## Installation
